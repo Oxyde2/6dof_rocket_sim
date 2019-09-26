@@ -57,7 +57,10 @@ class TestEulerStep(unittest.TestCase):
 		self.assertEqual(eulerStep(5j,0,0),'tStep is not real')
 	
 	def test_tStep_list(self):
-		self.assertEqual(eulerStep([1,2,3],1,1),'tStep is not a scalar')
+		self.assertEqual(eulerStep([1,2,5],1,1),'tStep is not a scalar')
+	
+	def test_heck(self):
+		self.assertEqual(eulerStep([1,2,5j],[51j+12,124324.12,12j+12j],[None]),'tStep is not a scalar')
 
 if __name__ =='__main__':
 	unittest.main()

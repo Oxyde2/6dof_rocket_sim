@@ -1,6 +1,6 @@
 import numpy as np
 
-def eulerStep(tStep, xn, yn):
+def euler_step(tStep, xn, yn):
 	if (np.ndim(tStep) != 0):
 		return('tStep is not a scalar')
 	if (np.iscomplex(tStep)):

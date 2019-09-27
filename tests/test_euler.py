@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from euler import eulerStep
+from sim.euler import eulerStep
 
 class TestEulerStep(unittest.TestCase):
 	

@@ -46,4 +46,4 @@ class Sensor():
 	accounted for in the dynamics math
 	'''
 	
-	def __init__(self, measurement_type, sensor_noise, )
+	def __init__(self, sensor_noise)

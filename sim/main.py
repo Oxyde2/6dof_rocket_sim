@@ -14,10 +14,10 @@ def main():
 		"omega_roll": 0,
 		"omega_pitch": 0,
 		"omega_yaw": 0,
-		"time": 0
+		"time": 0,
 	}
 	
-	
+	vehicle_state = State(initial_state)
 	
 	environmental_cond = []
 	test_env = environment(environment_cond)

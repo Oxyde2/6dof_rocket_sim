@@ -1,10 +1,23 @@
-'''Program for simulating rocket flight with possible controller implementation'''
 import sys
 
 def main():
-	initial_state = []
-	initial_time = 0
-	vehicle_state = state(initial_state, initial_time)
+	initial_state = {
+		"xpos": 30,
+		"ypos": 0,
+		"zpos": 0,
+		"xvel": 0,
+		"yvel": 0,
+		"zvel": 0,
+		"theta_roll": 0,
+		"theta_pitch": 0,
+		"theta_yaw": 0,
+		"omega_roll": 0,
+		"omega_pitch": 0,
+		"omega_yaw": 0,
+		"time": 0
+	}
+	
+	
 	
 	environmental_cond = []
 	test_env = environment(environment_cond)
@@ -26,6 +39,11 @@ def create_structural_components():
 	centering_ring = structure(mass, position, 'shape', length, radius1, radius2)
 	
 	return [airframe, landing_gear]
+	
+def setup_state():
+	initial_state = []
+	initial_time = 0
+	vehicle_state = state(initial_state, initial_time)
 
 if __name__ == "__main__":
 	main()

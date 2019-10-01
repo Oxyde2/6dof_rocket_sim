@@ -1,5 +1,31 @@
-from sympy import Matrix
-import math
+import numpy as np
+
+class Rocket():
+'''
+This class is meant to act as a backbone to add components
+
+Its state is all the variables we care about
+
+Components can be assigned to the rocket as well
+'''
+
+	def __init__(self, initial_state, rocket_name = 'rocket', components = None):
+		self.state = initial_state
+		self.name = rocket_name
+		self.components = components
+		
+	def get_state():
+		return self.state
+	
+	def update_state(new_state):
+		self.state = new_state
+		
+	def add_component(component):
+		
+		
+	
+
+
 
 # STATIC QUANTITIES
 

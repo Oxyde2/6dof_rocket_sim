@@ -1,6 +1,8 @@
+import sys
 import unittest
 import numpy as np
-import sim.iters as iters
+sys.path.append('D:\6dof_rocket_sim\sim\iters.py')
+import iters
 
 class TestEulerStep(unittest.TestCase):
 	
